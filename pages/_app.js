@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import '../styles/globals.css';
 import Head from 'next/head';
 
@@ -8,6 +9,7 @@ function App({ Component, pageProps }) {
         <title>Next.js App</title>
       </Head>
       <Component {...pageProps} />
+      <Analytics />
     </>
   );
 }
